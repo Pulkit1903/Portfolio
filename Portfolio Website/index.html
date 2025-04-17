@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="./assets/Icons/portfolio.svg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My-Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+
+    <nav id="desktop-nav">
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/Pics/profile-pic.png" alt="Pulkit Heda profile picture"/>
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Pulkit Heda</h1>
+        <p class="section__text__p2">DevOps Enthusiast</p>
+        <div id="socials-container">
+          <a href="https://www.linkedin.com/in/pulkit-heda-19032003ph/" target="_blank" rel="noopener noreferrer">
+            <img
+              src="./assets/Icons/linkedin.svg"
+              alt="My LinkedIn profile"
+              class = "icon"
+            />
+          </a>
+          <a href="https://github.com/Pulkit1903" target="_blank" rel="noopener noreferrer">
+            <img
+              src="./assets/Icons/github.svg"
+              alt="My GitHub profile"
+              class = "icon"
+            />
+          </a>
+        </div>
+        <div class="btn-container">
+          <a href="./assets/Pulkit_DevOps.pdf" download class="btn btn-color-2" style="text-decoration: none;">
+            Resume
+          </a>          
+        </div>
+      </div>
+    </section>
+    <div class="section-divider">
+      <span class="section-divider-icon">
+        <img src="./assets/Icons/infinity.svg" alt="Experience Icon">
+      </span>
+    </div>
+
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="./assets/Pics/about-pic.jpg" alt="About Picture" class="about-pic" />
+        </div>        
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/Icons/infinity.svg"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Hands-On</h3>
+              <p>3+ years <br />DevOps Tools & Cloud Services</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/Icons/education.svg"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Bachelors Degree<br/>Computer Science Engineering</p>
+            </div>
+          </div>
+          <br>
+          <div class="text-container">
+            <p>
+              Hi! I am a DevOps enthusiast who loves building cloud-native solutions with tools like Terraform, Docker, and AWS. I enjoy automating workflows, securing infrastructure, and making pipelines flow as smoothly as an F1 pit stop 🏎️. <br><br>Outside of tech, I’m a die-hard F1 and football fan — I live for race weekends and last-minute goals. Whether it’s debugging a script or cheering for my team, I bring passion, precision, and a bit of adrenaline to everything I do.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="section-divider">
+      <span class="section-divider-icon">
+        <img src="./assets/Icons/infinity.svg" alt="Experience Icon">
+      </span>
+    </div>
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">DevOps</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/DevOps/HashiCorp Terraform.svg"
+                  alt="Terraform"
+                  class="icon"
+                />
+                <div>
+                  <h3>Terraform</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/DevOps/GitHub Actions.svg"
+                  alt="GitHub Actions"
+                  class="icon"
+                />
+                <div>
+                  <h3>GH Actions</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/DevOps/Jenkins.svg"
+                  alt="Jenkins"
+                  class="icon"
+                />
+                <div>
+                  <h3>Jenkins</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/DevOps/Docker.svg"
+                  alt="Docker"
+                  class="icon"
+                />
+                <div>
+                  <h3>Docker</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/DevOps/git.svg"
+                  alt="GIT"
+                  class="icon"
+                />
+                <div>
+                  <h3>GIT</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/DevOps/Linux.svg"
+                  alt="Linux"
+                  class="icon"
+                />
+                <div>
+                  <h3>Linux CLI</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">AWS</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/AWS/IAM Identity Center.svg"
+                  alt="IAM"
+                  class="icon"
+                />
+                <div>
+                  <h3>IAM</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/AWS/EC2.svg"
+                  alt="EC2"
+                  class="icon"
+                />
+                <div>
+                  <h3>EC2</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/AWS/AWS-VPC.svg"
+                  alt="VPC"
+                  class="icon"
+                />
+                <div>
+                  <h3>VPC</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/AWS/Simple Storage Service.svg"
+                  alt="S3"
+                  class="icon"
+                />
+                <div>
+                  <h3>S3</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="section-divider">
+      <span class="section-divider-icon">
+        <img src="./assets/Icons/infinity.svg" alt="Experience Icon">
+      </span>
+    </div>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title project-title">Portfolio Deployment: GH Actions</h2>
+            <div class="article-container">
+              <img src = "./assets/Project/Proj2.png" class="project-img">
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title project-title">IaC Module AWS Resources Script</h2>
+            <div class="article-container">
+              <img src = "./assets/Project/Proj2.png" class = "project-img">
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Pulkit1903/IaC-AWS-Resource-Script'"
+              >
+                GitHub
+              </button>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title project-title">DevOps Driven Cloud Deployment Monitoring</h2>
+            <div class="article-container">
+              <img src="./assets/Project/Proj3.png" class="project-img" class = "project-img">
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Pulkit1903/DevOps-Driven-Cloud-Deployment-Monitoring'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="section-divider">
+      <span class="section-divider-icon">
+        <img src="./assets/Icons/infinity.svg" alt="Experience Icon">
+      </span>
+    </div>     
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <a href="mailto:pulkit.19.2003@gmail.com">
+            <img src = "assets/Icons/email.svg" alt = "Email SVG" class="icon">
+          </a>
+        </div>
+        <div class="contact-info-container">
+          <a href="https://www.linkedin.com/in/pulkit-heda-19032003ph/" target="_blank" rel="noopener noreferrer">
+            <img
+              src="./assets/Icons/linkedin.svg"
+              alt="My LinkedIn profile"
+              class="icon"
+            /></a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <p style="color: #d5b48c;">Made with 🤍 by Pulkit</p>
+        </div>
+      </nav>
+    </footer>
+  </body>
+</html>
