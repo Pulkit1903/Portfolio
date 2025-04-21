@@ -10,6 +10,3 @@ module "my-portfolio"{
 output "bucket_name" {
   value = module.my-portfolio.bucket_name
 }
-output "website_url" {
-  value = aws_s3_bucket_website_configuration.static_site_on.website_endpoint
-}
