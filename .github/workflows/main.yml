@@ -1,0 +1,43 @@
+name: Deploy Static Website to S3 via Terraform
+
+on:
+  push:
+    branches:
+      - main 
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Step 1: Checkout code
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    # Step 2: Configure AWS credentials from GitHub secrets
+    - name: Configure AWS Credentials
+      uses: aws-actions/configure-aws-credentials@v3
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACESS_KEY }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: us-east-2
+
+    # Step 3: Set up Terraform
+    - name: Setup Terraform
+      uses: hashicorp/setup-terraform@v3
+      with:
+        terraform_version: 1.7.5  
+
+    - name: Terraform Init
+      run: terraform init
+      working-directory: ./Terraform_S3
+
+    - name: Terraform Apply (auto-approve)
+      run: terraform apply -auto-approve
+      working-directory: ./Terraform_S3
+
+    # Step 4: Upload static website files to S3
+    - name: Upload static site to S3
+      run: |
+        BUCKET_NAME=$(terraform -chdir=./Terraform_S3 output -raw bucket_name)
+        aws s3 sync ./Portfolio_Website s://$BUCKET_NAME --delete --acl public-read
