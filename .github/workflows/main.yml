@@ -36,6 +36,11 @@ jobs:
       run: terraform apply -auto-approve
       working-directory: ./Terraform_S3
 
+    - name: Ensure bucket exists (optional)
+      run: |
+        aws s3api head-bucket --bucket $(terraform -chdir=./Terraform_S3 output -raw bucket_name) || \
+        aws s3api create-bucket --bucket $(terraform -chdir=./Terraform_S3 output -raw bucket_name) --region us-east-2
+
     # Step 4: Upload static website files to S3
     - name: Upload static site to S3
       run: |
