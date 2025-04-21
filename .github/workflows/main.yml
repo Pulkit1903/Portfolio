@@ -40,4 +40,4 @@ jobs:
     - name: Upload static site to S3
       run: |
         BUCKET_NAME=$(terraform -chdir=./Terraform_S3 output -raw bucket_name)
-        aws s3 sync ./Portfolio_Website s3://$BUCKET_NAME --delete --acl public-read
+        aws s3 sync ./Portfolio_Website s3://$BUCKET_NAME --delete
