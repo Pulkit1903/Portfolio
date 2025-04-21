@@ -51,6 +51,10 @@ resource "aws_s3_bucket_policy" "public_read_policy" {
   depends_on = [aws_s3_bucket_public_access_block.public_access]
 }
 
+output "bucket_name" {
+  value = aws_s3_bucket.static_site.bucket
+}
+
 output "website_url" {
   value = aws_s3_bucket_website_configuration.static_site_on.website_endpoint
 }
