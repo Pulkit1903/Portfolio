@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="refresh" content="5; url=index.html" />
+    <title>Oops! Page Not Found</title>
+    <link rel="icon" href="./assets/Icons/portfolio.svg" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Inter', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #0f172a;
+        color: #d5b48c;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .error-container {
+        max-width: 600px;
+      }
+
+      .error-code {
+        font-size: 96px;
+        font-weight: 700;
+        color: #fff;
+      }
+
+      .error-message {
+        font-size: 24px;
+        margin: 20px 0;
+      }
+
+      .error-description {
+        font-size: 18px;
+        color: #94a3b8;
+        margin-bottom: 30px;
+      }
+
+      .home-btn {
+        background-color: #d5b48c;
+        color: #0f172a;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 10px;
+        font-weight: 600;
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        transition: background 0.3s ease;
+      }
+
+      .home-btn:hover {
+        background-color: #e8cfae;
+      }
+
+      .error-icon {
+        width: 80px;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="error-container">
+      <img src="./assets/Icons/infinity.svg" alt="Infinity Icon" class="error-icon" />
+      <div class="error-code">404</div>
+      <div class="error-message">Oops! Page not found.</div>
+      <div class="error-description">
+        Looks like you've ventured off the grid. Redirecting you home in 5 seconds...
+      </div>
+      <a href="index.html" class="home-btn">Go Back Home</a>
+    </div>
+  </body>
+</html>
