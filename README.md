@@ -20,6 +20,21 @@ This project deploys a static portfolio website to AWS S3 using **Terraform Modu
 
 ---
 
+## 💡 Why S3?
+
+I chose **Amazon S3** to host the portfolio site because:
+
+- It's **cost-effective** (no server costs)
+- It supports **static website hosting**
+- Easy integration with **Terraform** and **GitHub Actions**
+
+> 🆚 Other Considered Options:
+> - AWS ECS
+> - AWS EC2  
+> But they were more costly and overkill for a static site.
+
+---
+
 ## 📁 Project Structure
 ├── .github/
 │   └── workflows/
