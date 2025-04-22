@@ -42,10 +42,5 @@ jobs:
       run: |
         BUCKET_NAME=$(terraform -chdir=./Terraform_S3 output -raw bucket_name)
         aws s3 sync ./Portfolio_Website s3://$BUCKET_NAME --delete
-        
-    - name: Show Website URL
-      run: |
-        echo "Your site is live at:"
-        terraform output website_url
 
 
