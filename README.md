@@ -14,6 +14,7 @@ This project deploys a static portfolio website to AWS S3 using **Terraform Modu
 ## 🛠️ Tech Stack
 
 - **Terraform** – For defining and provisioning AWS infrastructure
+- **Terraform Module** - To reuse and organize infrastructure code efficiently across projects.
 - **GitHub Actions** – For automating the deployment pipeline
 - **AWS S3** – For static website hosting
 - **HTML/CSS** – Portfolio website content
@@ -35,29 +36,13 @@ I chose **Amazon S3** to host the portfolio site because:
 
 ---
 
-## 📁 Project Structure
-├── .github/
-│   └── workflows/
-│       └── deploy.yml              
-├── Portfolio_Website/
-│   ├── index.html                  
-│   ├── error.html                  
-│   └── ...                         
-├── Terraform_S3/
-│   ├── AWS_S3/
-│      └── var.tf                  
-│      ├── S3.tf
-├── main.tf                     
-├── README.md                      
-
----
-
 ## 🚀 Deployment Steps
 
 ### 🔧 1. Prerequisites
 
 - AWS account with access key & secret
-- [Terraform](https://www.terraform.io/downloads)
+- Terraform
+- Terraform Module
 - GitHub repository
 - Enable GitHub Actions
 - Store secrets in GitHub:
@@ -74,7 +59,7 @@ Place your HTML, CSS, JS files inside `Portfolio_Website/`.
 
 ### ⚙️ 3. Configure Terraform
 
-Edit `Terraform_S3/variables.tf` with:
+Edit `Terraform_S3/main.tf` with:
 
 ```hcl
 module "my-portfolio"{
