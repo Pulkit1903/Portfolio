@@ -3,7 +3,9 @@ name: Deploy Static Website to S3 via Terraform
 on:
   push:
     branches:
-      - main 
+      - main
+    paths-ignore:
+      - 'README.md' 
 
 jobs:
   deploy:
