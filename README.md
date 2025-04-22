@@ -21,4 +21,44 @@ This project deploys a static portfolio website to AWS S3 using **Terraform** fo
 ---
 
 ## 📁 Project Structure
+.
+├── .github/workflows/
+│   └── deploy.yml             # GitHub Actions Workflow
+├── Terraform_S3/
+│   └── main.tf                # Terraform Config using Module
+├── Portfolio_Website/
+│   └── index.html             # Your Portfolio Content
+└── README.md
+
+
+---
+
+## 🚀 Deployment Steps
+
+### 🔧 1. Prerequisites
+
+- AWS account with access key & secret
+- [Terraform](https://www.terraform.io/downloads)
+- GitHub repository
+- Enable GitHub Actions
+- Store secrets in GitHub:
+  - `AWS_ACCESS_KEY`
+  - `AWS_SECRET_ACCESS_KEY`
+
+---
+
+### 📤 2. Add Your Website Files
+
+Place your HTML, CSS, JS files inside `Portfolio_Website/`.
+
+---
+
+### ⚙️ 3. Configure Terraform
+
+Edit `Terraform_S3/variables.tf` with:
+
+```hcl
+variable "bucket_name" {
+  default = "your-unique-bucket-name"
+}
 
