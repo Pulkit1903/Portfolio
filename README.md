@@ -7,7 +7,7 @@
 
 ## 📦 Overview
 
-This project deploys a static portfolio website to AWS S3 using **Terraform** for infrastructure provisioning and **GitHub Actions** for continuous deployment.
+This project deploys a static portfolio website to AWS S3 using **Terraform Modules** for infrastructure provisioning and **GitHub Actions** for continuous deployment.
 
 ---
 
@@ -21,15 +21,19 @@ This project deploys a static portfolio website to AWS S3 using **Terraform** fo
 ---
 
 ## 📁 Project Structure
-.
-├── .github/workflows/
-│   └── deploy.yml             # GitHub Actions Workflow
-├── Terraform_S3/
-│   └── main.tf                # Terraform Config using Module
+├── .github/
+│   └── workflows/
+│       └── deploy.yml              
 ├── Portfolio_Website/
-│   └── index.html             # Your Portfolio Content
-└── README.md
-
+│   ├── index.html                  
+│   ├── error.html                  
+│   └── ...                         
+├── Terraform_S3/
+│   ├── AWS_S3/
+│      └── var.tf                  
+│      ├── S3.tf
+├── main.tf                     
+├── README.md                      
 
 ---
 
@@ -58,7 +62,13 @@ Place your HTML, CSS, JS files inside `Portfolio_Website/`.
 Edit `Terraform_S3/variables.tf` with:
 
 ```hcl
-variable "bucket_name" {
-  default = "your-unique-bucket-name"
+module "my-portfolio"{
+    source = "./AWS_S3"
+    region = "Region"
+    bucket_name = "Bucket Name"
+    host_file = "HTML File"
+    error_file = "Error HTML File"
+    version_boolean = false
+    force_destroy = true
 }
 
