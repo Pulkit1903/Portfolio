@@ -1,7 +1,7 @@
 /* Screen ≤ 1400px */
 @media screen and (max-width: 1400px) {
   #profile {
-    height: 70vh;
+    height: 60vh;
   }
 
   .about-containers {
