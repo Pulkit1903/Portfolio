@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <link rel="icon" href="./assets/Icons/portfolio.svg" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,6 +14,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
+
   <body>
 
     <nav id="desktop-nav">
@@ -23,7 +28,7 @@
       </div>
     </nav>
 
-    <section id="profile">
+    <section class="section" class="section" class="section" class="section" class="section" class="section" id="profile">
       <div class="section__pic-container">
         <img src="./assets/Pics/profile-pic.png" alt="Pulkit Heda profile picture"/>
       </div>
@@ -54,6 +59,7 @@
         </div>
       </div>
     </section>
+
     <div class="section-divider">
       <span class="section-divider-icon">
         <img src="./assets/Icons/infinity.svg" alt="Experience Icon">
@@ -61,11 +67,10 @@
     </div>
 
     <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
         <div class="section__pic-container">
-          <img src="./assets/Pics/about-pic.jpg" alt="About Picture" class="about-pic" />
+          <img src="./assets/Pics/about-pic.png" alt="About Picture" class="about-pic" />
         </div>        
         <div class="about-details-container">
           <div class="about-containers">
@@ -97,18 +102,17 @@
         </div>
       </div>
     </section>
+
     <div class="section-divider">
       <span class="section-divider-icon">
         <img src="./assets/Icons/infinity.svg" alt="Experience Icon">
       </span>
     </div>
+
     <section id="skills">
-      <p class="section__text__p1">Explore My</p>
       <h1 class="title">Skills</h1>
       <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">DevOps</h2>
+        <div class = "carousel">
             <div class="article-container">
               <article>
                 <img
@@ -116,9 +120,6 @@
                   alt="Terraform"
                   class="icon"
                 />
-                <div>
-                  <h3>Terraform</h3>
-                </div>
               </article>
               <article>
                 <img
@@ -126,9 +127,6 @@
                   alt="GitHub Actions"
                   class="icon"
                 />
-                <div>
-                  <h3>GH Actions</h3>
-                </div>
               </article>
               <article>
                 <img
@@ -136,9 +134,6 @@
                   alt="Jenkins"
                   class="icon"
                 />
-                <div>
-                  <h3>Jenkins</h3>
-                </div>
               </article>
               <article>
                 <img
@@ -146,9 +141,6 @@
                   alt="Docker"
                   class="icon"
                 />
-                <div>
-                  <h3>Docker</h3>
-                </div>
               </article>
               <article>
                 <img
@@ -156,9 +148,6 @@
                   alt="GIT"
                   class="icon"
                 />
-                <div>
-                  <h3>GIT</h3>
-                </div>
               </article>
               <article>
                 <img
@@ -166,24 +155,13 @@
                   alt="Linux"
                   class="icon"
                 />
-                <div>
-                  <h3>Linux CLI</h3>
-                </div>
               </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">AWS</h2>
-            <div class="article-container">
               <article>
                 <img
                   src="./assets/AWS/IAM Identity Center.svg"
                   alt="IAM"
                   class="icon"
                 />
-                <div>
-                  <h3>IAM</h3>
-                </div>
               </article>
               <article>
                 <img
@@ -191,9 +169,6 @@
                   alt="EC2"
                   class="icon"
                 />
-                <div>
-                  <h3>EC2</h3>
-                </div>
               </article>
               <article>
                 <img
@@ -201,9 +176,6 @@
                   alt="VPC"
                   class="icon"
                 />
-                <div>
-                  <h3>VPC</h3>
-                </div>
               </article>
               <article>
                 <img
@@ -211,9 +183,6 @@
                   alt="S3"
                   class="icon"
                 />
-                <div>
-                  <h3>S3</h3>
-                </div>
               </article>
               <article>
                 <img
@@ -221,77 +190,143 @@
                   alt="ECS"
                   class="icon"
                 />
-                <div>
-                  <h3>ECS</h3>
-                </div>
               </article>
-            </div>
+              <article>
+                <img
+                  src="./assets/DevOps/HashiCorp Terraform.svg"
+                  alt="Terraform"
+                  class="icon"
+                />
+              </article>
+              <article>
+                <img
+                  src="./assets/DevOps/GitHub Actions.svg"
+                  alt="GitHub Actions"
+                  class="icon"
+                />
+              </article>
+              <article>
+                <img
+                  src="./assets/DevOps/Jenkins.svg"
+                  alt="Jenkins"
+                  class="icon"
+                />
+              </article>
+              <article>
+                <img
+                  src="./assets/DevOps/Docker.svg"
+                  alt="Docker"
+                  class="icon"
+                />
+              </article>
+              <article>
+                <img
+                  src="./assets/DevOps/Git.svg"
+                  alt="GIT"
+                  class="icon"
+                />
+              </article>
+              <article>
+                <img
+                  src="./assets/DevOps/Linux.svg"
+                  alt="Linux"
+                  class="icon"
+                />
+              </article>
+              <article>
+                <img
+                  src="./assets/AWS/IAM Identity Center.svg"
+                  alt="IAM"
+                  class="icon"
+                />
+              </article>
+              <article>
+                <img
+                  src="./assets/AWS/EC2.svg"
+                  alt="EC2"
+                  class="icon"
+                />
+              </article>
+              <article>
+                <img
+                  src="./assets/AWS/AWS-VPC.svg"
+                  alt="VPC"
+                  class="icon"
+                />
+              </article>
+              <article>
+                <img
+                  src="./assets/AWS/Simple Storage Service.svg"
+                  alt="S3"
+                  class="icon"
+                />
+              </article>
+              <article>
+                <img
+                  src="./assets/AWS/Elastic Container Service.svg"
+                  alt="ECS"
+                  class="icon"
+                />
+              </article>
           </div>
         </div>
       </div>
     </section>
+
     <div class="section-divider">
       <span class="section-divider-icon">
         <img src="./assets/Icons/infinity.svg" alt="Experience Icon">
       </span>
     </div>
+
     <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title project-title">Portfolio Deployment: GH Actions</h2>
-            <div class="article-container">
-              <img src = "./assets/Project/Proj2.png" class="project-img">
-            </div>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title project-title">IaC Module AWS Resources Script</h2>
-            <div class="article-container">
-              <img src = "./assets/Project/Proj2.png" class = "project-img">
-            </div>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Pulkit1903/IaC-AWS-Resource-Script'"
-              >
-                GitHub
-              </button>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title project-title">DevOps Driven Cloud Deployment Monitoring</h2>
-            <div class="article-container">
-              <img src="./assets/Project/Proj3.png" class="project-img" class = "project-img">
-            </div>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Pulkit1903/DevOps-Driven-Cloud-Deployment-Monitoring'"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-        </div>
+  <h1 class="title">Projects</h1>
+  <div class="projects-wrapper">
+
+    <div class="project-row">
+      <div class="project-image-card">
+        <img src="./assets/Project/ChatGPT Image May 31, 2025, 12_08_41 AM.png" alt="Project 1" class="project-img-alt">
       </div>
-    </section>
+      <div class="project-glass-box">
+        <h2 class="project-title">Portfolio Deployment: GH Actions</h2>
+        <p>Automated deployment using GitHub Actions to push changes to AWS S3 hosting.</p>
+        <button class="project-btn" onclick="location.href='https://github.com/'">GitHub</button>
+      </div>
+    </div>
+
+    <div class="project-row reverse">
+      <div class="project-image-card">
+        <img src="./assets/Project/Proj2.png" alt="Project 2" class="project-img-alt">
+      </div>
+      <div class="project-glass-box">
+        <h2 class="project-title">IaC Module AWS Resources Script</h2>
+        <p>Terraform module to provision reusable AWS infrastructure securely.</p>
+        <button class="project-btn" onclick="location.href='https://github.com/Pulkit1903/IaC-AWS-Resource-Script'">GitHub</button>
+      </div>
+    </div>
+
+    <div class="project-row">
+      <div class="project-image-card">
+        <img src="./assets/Project/Proj3.png" alt="Project 3" class="project-img-alt">
+      </div>
+      <div class="project-glass-box">
+        <h2 class="project-title">DevOps Driven Cloud Deployment Monitoring</h2>
+        <p>Monitoring setup using Prometheus and Grafana in a CI/CD pipeline on AWS.</p>
+        <button class="project-btn" onclick="location.href='https://github.com/Pulkit1903/DevOps-Driven-Cloud-Deployment-Monitoring'">GitHub</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
     <div class="section-divider">
       <span class="section-divider-icon">
         <img src="./assets/Icons/infinity.svg" alt="Experience Icon">
       </span>
-    </div>     
+    </div>
+
     <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
@@ -309,12 +344,14 @@
         </div>
       </div>
     </section>
+
     <footer>
       <nav>
         <div class="nav-links-container">
-          <p style="color: #d5b48c;">Made with 🤍 by Pulkit</p>
+          <p style="color: #646363;">Made with 🤍 by Pulkit</p>
         </div>
       </nav>
     </footer>
+
   </body>
 </html>

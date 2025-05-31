@@ -27,7 +27,6 @@
     display: block;
   }
 
-
   section,
   .section-container {
     min-height: fit-content;
@@ -72,6 +71,10 @@
 
   article {
     font-size: 1rem;
+  }
+  article .icon{
+    height: 50px;
+    width: 50px;
   }
 
   footer nav {
