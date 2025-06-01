@@ -53,7 +53,7 @@
   #desktop-nav {
     display: none;
   }
-
+  
   #contact,
   footer {
     height: 10vh;
@@ -65,7 +65,7 @@
     margin-top: 32px;
   }
 
-  #about{
+  #about,#skills{
     padding: 0.5rem;
   }
 
