@@ -1,31 +1,33 @@
 /* Fonts For HTML*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 * {
   margin: 0;
   padding: 0;
 }
 
 .project-glass-box p, h3, p {
-  font-family: 'Poppins', sans-serif; 
+  font-family: 'Roboto Flex', sans-serif;
+  font-weight: 700; 
 }
 
 .title {
-  font-family: 'Caveat', cursive;
+  font-family: 'Open Sans', sans-serif;
   font-size: 3rem;
+  font-weight: 300;
   text-align: center;
-  color:#d5b48c
+  color:white
 }
 
 h3{
-  color:#d5b48c;
-  font-family: 'Caveat', cursive;
+  color:white;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.5rem;
+  font-weight: 300;
 }
 
 body {
-  background-color: #242424;
+ background: #000;
 }
 
 html {
@@ -33,7 +35,7 @@ html {
 }
 
 p {
-  color: #9e9d9d;
+  color: #616161;
   font-size: larger ;
 }
 
@@ -61,12 +63,12 @@ nav {
   gap: 2rem;
   list-style: none;
   font-size: 2rem;
-  font-family:'Caveat', cursive;
+  font-family:'Open Sans', sans-serif;
 }
 
 .nav-links a {
   position: relative;
-  color: #d5b48c;
+  color: #FFFFFF;
   text-decoration: none;
   transition: color 0.3s ease-in-out;
 }
@@ -78,7 +80,7 @@ nav {
   bottom: -5px;
   width: 100%;
   height: 2px;
-  background-color: #d5b48c;
+  background-color: #FFFFFF;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease-in-out;
@@ -91,7 +93,7 @@ nav {
 /* SECTIONS */
 
 section {
-  padding: 1rem 4rem; 
+  padding: 1rem 4rem;
   margin: 0 auto;
   box-sizing: border-box;
   min-height: fit-content;
@@ -107,7 +109,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 2rem auto;
+  margin: 1rem auto;
   width: 80%;
 }
 
@@ -192,11 +194,11 @@ section {
 }
 
 .btn-color-2 {
-  border: #2A2A2A 0.2rem solid;
-  background: linear-gradient(to right, #d5b48c 50%, #171717 50%);
+  border: #2A2A2A 0.3rem solid;
+  background: linear-gradient(to right, #FFFFFF 50%, #171717 50%);
   background-size: 200% 100%;
   background-position: right bottom;
-  color: #d5b48c;
+  color: #FFFFFF;
   font-weight: 700;
   transition: all 0.4s ease-in-out;
 }
@@ -217,15 +219,6 @@ section {
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
-}
-
-.details-container {
-  padding: 1.5rem;
-  flex: 1;
-  border-radius: 2rem;
-  border: #2A2A2A 0.2rem solid;
-  text-align: center;
-  box-shadow: 0 0 20px rgba(0.3, 0.3, 0.3, 0.3);
 }
 
 .details-container:last-child {
@@ -251,7 +244,7 @@ section {
   flex: 1;
   background: #171717;
   border-radius: 2rem;
-  border: #2A2A2A 0.2rem solid;
+  border: #2A2A2A 0.5rem solid;
   text-align: center;
 }
 
@@ -329,7 +322,7 @@ article {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 2rem;
+  margin-top: 1rem;
 }
 
 .project-row.reverse {
@@ -337,7 +330,7 @@ article {
 }
 
 .project-image-card {
-  padding: 0.5rem;
+  padding:1rem;
   border-radius: 1rem;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
   max-width: 350px;
@@ -345,7 +338,7 @@ article {
 
 .project-img-alt {
   width: 100%;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   display: block;
 }
 
@@ -354,7 +347,7 @@ article {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 1rem;
-  padding: 1.5rem;
+  padding: 1rem;
   max-width: 450px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
   color: white;
@@ -363,19 +356,23 @@ article {
 .project-title {
   margin-bottom: 0.5rem;
   font-size: 1.5rem;
-  color: #d5b48c;
-  font-family: 'Caveat', cursive;
+  color: #FFFFFF;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
 }
 
 .project-glass-box p {
-  color: #ccc;
+  color: #616161;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .project-btn {
-  color: #d5b48c;
+  display: block;               
+  margin: 0 auto;               
+  color: #FFFFFF;
   border: 0.2rem solid #2A2A2A;
-  background: linear-gradient(to right, #d5b48c 50%, #171717 50%);
+  background: linear-gradient(to right, #FFFFFF 50%, #171717 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   padding: 0.6rem 1.2rem;
@@ -427,4 +424,5 @@ footer {
 
 footer p {
   text-align: center;
+  color: #616161;
 }
